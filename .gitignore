@@ -1,0 +1,12 @@
+
+# Compiled executable
+campus
+campus.exe
+
+# Object files
+*.o
+*.obj
+
+# IDE files
+.vscode/
+.idea/
