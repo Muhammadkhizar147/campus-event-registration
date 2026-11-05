@@ -20,7 +20,8 @@ int main()
         cout << "1. Register Student\n";
         cout << "2. List All Registrations\n";
         
-        cout << "3. Exit\n";
+        cout << "3. Search Registration\n";
+        cout << "4. Exit\n";
 
         cout << "\nEnter your choice: ";
 
@@ -62,9 +63,26 @@ int main()
                 break;
             }
 
-        
-
             case 3:
+            {
+                string reg;
+
+                cout << "\nEnter Registration Number to Search: ";
+                getline(cin, reg);
+
+                if (reg.empty())
+                {
+                    cout << "\nError: Registration number is required!\n";
+                }
+                else
+                {
+                    manager.searchRegistration(reg);
+                }
+
+                break;
+            }
+
+            case 4:
             {
                 cout << "\nExiting application. Goodbye!\n";
                 break;
@@ -76,7 +94,7 @@ int main()
             }
         }
 
-    } while (choice != 3);
+    } while (choice != 4);
 
     return 0;
 }

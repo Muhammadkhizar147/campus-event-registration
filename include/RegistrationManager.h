@@ -14,6 +14,7 @@ private:
     vector<Student> students;
 
 public:
+    bool searchRegistration(string reg) const;
     bool registerStudent(string name, string reg, string workshop);
 
     void listRegistrations() const;
