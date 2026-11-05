@@ -50,18 +50,4 @@ void RegistrationManager::listRegistrations() const
     }
 }
 
-bool RegistrationManager::searchRegistration(string reg) const
-{
-    for (const Student& student : students)
-    {
-        if (student.getRegistrationNumber() == reg)
-        {
-            cout << "\n===== STUDENT FOUND =====\n";
-            student.display();
-            return true;
-        }
-    }
 
-    cout << "\nError: Registration record not found!\n";
-    return false;
-}

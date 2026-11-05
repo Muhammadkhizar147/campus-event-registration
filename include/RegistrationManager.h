@@ -18,7 +18,6 @@ public:
 
     void listRegistrations() const;
 
-    bool searchRegistration(string reg) const;
 };
 
 #endif
