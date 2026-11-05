@@ -38,3 +38,18 @@ g++ -std=c++17 -Iinclude src/main.cpp src/Student.cpp src/RegistrationManager.cp
 ## Execution
 
 ./campus
+## Usage Example
+
+Example registration:
+
+Student Name: Ali Khan
+Registration Number: CS-101
+Workshop: AI Workshop
+
+The application confirms successful registration.
+
+Example search:
+
+Enter Registration Number: CS-101
+
+The application displays the matching student's details.
